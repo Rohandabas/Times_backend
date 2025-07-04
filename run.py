@@ -5,7 +5,6 @@ Run this file to start the Reddit data fetching backend
 """
 
 import sys
-import os
 import subprocess
 
 def install_requirements():
@@ -18,24 +17,10 @@ def install_requirements():
         print(f"❌ Error installing requirements: {e}")
         sys.exit(1)
 
-def check_env_file():
-    """Check if .env file exists"""
-    if not os.path.exists('.env'):
-        print("❌ .env file not found!")
-        print("Please create a .env file with your Reddit API credentials:")
-        print("REDDIT_CLIENT_ID=your_client_id")
-        print("REDDIT_CLIENT_SECRET=your_client_secret")
-        print("REDDIT_USER_AGENT=your_user_agent")
-        sys.exit(1)
-    print("✅ .env file found")
-
 def main():
     """Main runner function"""
     print("🚀 Starting TrendScout Backend...")
-    
-    # Check environment
-    check_env_file()
-    
+
     # Install requirements
     install_requirements()
     
