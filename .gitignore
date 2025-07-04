@@ -1,0 +1,27 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment variables
+.env
+
+# Virtual environments
+venv/
+env/
+*.egg-info/
+
+# macOS
+.DS_Store
+
+# IDE/editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Pytest cache
+.pytest_cache/
